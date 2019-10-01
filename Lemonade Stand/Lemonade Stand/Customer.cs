@@ -12,9 +12,17 @@ namespace Lemonade_Stand
         private List<string> names;
         public string name;
 
-    
-    //Constructor (Spawner)
-    
+
+        //Constructor (Spawner)
+        public Customer()
+        {
+
+        
+        
+        
+        
+        
+        }
     
     
     

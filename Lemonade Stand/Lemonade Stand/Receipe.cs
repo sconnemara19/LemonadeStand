@@ -10,7 +10,7 @@ namespace Lemonade_Stand
     {
         //Member Variables (Has A)
         public int amountOfLemons;
-        public int amountOfSugarCubes;
+        public int amountOfSugar;
         public int amountOfIceCubes;
         public double pricePerCup;
 
@@ -20,7 +20,7 @@ namespace Lemonade_Stand
         public Receipe()
         {
             amountOfLemons = 0;
-            amountOfSugarCubes = 0;
+            amountOfSugar = 0;
             amountOfIceCubes = 0;
             pricePerCup = 0;
         
@@ -41,7 +41,7 @@ namespace Lemonade_Stand
         {
             
             LemonsIntoLemonade();
-            AddingSuger();
+            AddingSugar();
             SelectIce();
             PricePerCup();
         }        
@@ -53,10 +53,10 @@ namespace Lemonade_Stand
             
         }
 
-        private void AddingSuger()
+        private void AddingSugar()
         {
             Console.WriteLine("Please enter how many cups of Sugar you would like to add");
-            amountOfSugarCubes = Int32.Parse(Console.ReadLine());
+            amountOfSugar = Int32.Parse(Console.ReadLine());
             
         }
         

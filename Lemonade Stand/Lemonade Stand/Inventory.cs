@@ -8,21 +8,38 @@ namespace Lemonade_Stand
 {
     class Inventory
     {
-    //Memebr Methods 
-        
+        //Memebr Variables
+
+        //Lemons
+        public List<Lemon> lemons;
+        //Sugar
+        public List <SugarCube>sugarCubes;
+        //IceCubes
+        public List <IceCube> iceCubes;
+        //Cups
+        public List<Cup> cups;
+
+        //Constructor (Spawner)
+        public Inventory()
+        {
+
+            lemons = new List<Lemon>();
+            sugarCubes = new List<SugarCube>();
+            iceCubes = new List<IceCube>();
+            cups = new List<Cup>();
+
+        }
 
 
 
-    //Constructor (Spawner)
 
 
+        //Member Methods
 
+        public void BuyingLemons()
+        {
 
-
-
-    //Member Methods
-    
-    
+        }    
     
     
     

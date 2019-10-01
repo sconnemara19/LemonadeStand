@@ -8,16 +8,24 @@ namespace Lemonade_Stand
 {
     class Wallet
     {
-    //Memeber Variables 
+        //Memeber Variables 
+
+        private double moneyInWallet;
 
 
-    
-    //Constructor 
-
-
-
+        //Constructor (Spawner)
+        public Wallet()
+        {
+            moneyInWallet = 30;
+        }
 
     //Member Methods
-    
+            
+
+
+
+
+
+
     }
 }

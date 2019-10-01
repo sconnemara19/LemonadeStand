@@ -8,19 +8,22 @@ namespace Lemonade_Stand
 {
     class Store
     {
-    //Member Variables 
-    
-    
-    
-    //Constuctor(Spawner)
-    
-    
-    
-    
+        //Member Variables 
+
+        Player player;
+
+       
+        //Constuctor(Spawner)
+
+            
 
 
-    //Member Methods (Can do)
 
+
+        //Member Methods (Can do)
+        public void DisplayMenu()
+        {
+            switch{}
 
 
     }

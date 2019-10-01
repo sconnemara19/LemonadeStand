@@ -10,20 +10,42 @@ namespace Lemonade_Stand
     {
         //Member Variables (Has A)
         public string name;
+        public Inventory inventory;
+        public Wallet wallet;
+        public Receipe receipe;
+        public Pitcher pitcher;
+        public double buisnessProfits;
+
+
+
+
+
+
+
+
+        //Constructor (Spawner)
+
+        public Player()
+        {
+            name = null;
+
         
-
-
-
-
-    //Constructor (Spawner)
-
-
+        
+        
+        
+        
+        
+        }
     
     
 
      //Member Methods (Can Do)   
 
 
-
+        public void EnterName()
+        {
+            Console.WriteLine("Enter name");
+            name = Console.ReadLine();
+        }
     }
 }

@@ -11,15 +11,23 @@ namespace Lemonade_Stand
 
         //Member Variables (Has A)
 
-        Receipe receipe = new Receipe();
+        Player player = new Player();
         
+        List<Day> days;
+        int currentDay;
+
 
 
 
 
         //Constructor (Spawner)
 
+        public Game()
+        {
+             
+            
 
+        }
 
 
 
@@ -27,13 +35,22 @@ namespace Lemonade_Stand
 
         public void RunGame()
         {
-                    
-        
+            Userinterface.DisplayRules();
+            player.EnterName();
+
         }
 
-
+        
+       
+    
+    
+    
+    
     
     }
+
+
+
 
 
 }

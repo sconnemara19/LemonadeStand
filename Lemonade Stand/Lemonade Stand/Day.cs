@@ -8,9 +8,11 @@ namespace Lemonade_Stand
 {
     class Day
     {
-    //Member Variables(Has A)
-    
-    
+        //Member Variables(Has A)
+
+        public Weather weather;
+        public List<Customer> customer;
+
     
     //Constructor(Spawner)
     
