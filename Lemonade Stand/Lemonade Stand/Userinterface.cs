@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lemonade_Stand
 {
-   public static class Userinterface
+    static class Userinterface
     {
-        //Member Variables 
-       
-
 
         //Constructor
         static Userinterface()
         {
-           
+
         }
 
 
@@ -29,9 +26,45 @@ namespace Lemonade_Stand
 
         }
 
-        public static void DisplayStore()
+       
+
+        public static void DisplayStoreMenu()
         {
-            Console.WriteLine();
+            Console.WriteLine("Welcome to the store!\n1)View Inventory\n2)Buy Lemons .50cents/per Lemon\n3)Buy Sugar Cubes $1.50\n4)Buy IceCubes/\n5)Buy Cups");
         }
+        public static int GetIntegerInput()
+        {
+            try
+            {
+                int choice = Int32.Parse(Console.ReadLine());
+                return choice;
+
+            }
+            catch
+            {
+                Console.WriteLine("Invaild entry, please try again");
+                return GetIntegerInput();
+            }
+
+        }
+        public static void DisplayInventory(Inventory inventory)
+        {
+            Console.WriteLine("Inventory\nLemons: " + inventory.lemons.Count);
+            Console.WriteLine("Inventory\nSugarCubes: " + inventory.sugarCubes.Count);
+            Console.WriteLine("Inventory\nIceCubes: " + inventory.iceCubes.Count);
+            Console.WriteLine("Inventory\nCups:" + inventory.cups.Count);
+
+
+        }
+        public static void PurchasingLemons()
+        {
+            Console.WriteLine("How many lemons would you like to buy?");
+        }
+
+
+        
+
+
+       
     }
 }

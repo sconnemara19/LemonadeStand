@@ -36,15 +36,18 @@ namespace Lemonade_Stand
 
         //Member Methods
 
-        public void BuyingLemons()
-        {
+       
+    
+    
+    
+    
+    
+    
+    
+    }   
 
-        }    
-    
-    
-    
-    
-    }
+
+
 
 
 

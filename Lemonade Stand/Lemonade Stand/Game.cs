@@ -37,7 +37,8 @@ namespace Lemonade_Stand
         {
             Userinterface.DisplayRules();
             player.EnterName();
-
+            Store store = new Store(player);
+            store.Menu();
         }
 
         

@@ -73,12 +73,12 @@ namespace Lemonade_Stand
 
         private void PricePerCup()
         {
-            Console.WriteLine("In cents How much would you like to charge per cup?");
+            Console.WriteLine(" How many cups would you like to charge per cup?");
             pricePerCup =double.Parse(Console.ReadLine());
         
         }   
     
-    
+            
     
     }
 
