@@ -10,7 +10,7 @@ namespace Lemonade_Stand
     {
         //Memeber Variables 
 
-        private double moneyInWallet;
+        public double moneyInWallet;
 
 
         //Constructor (Spawner)

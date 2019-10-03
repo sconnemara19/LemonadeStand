@@ -9,29 +9,29 @@ namespace Lemonade_Stand
     class Weather
     {
 
-        //Memeber Variables
+       // Member Variables
 
-        //string condition;
-        //public int temperature;
-        //private List<string> weatherConditions;
-        //public string predictedForecast;
+        string condition;
+        public int temperature;
+        private List<string> weatherConditions;
+        public string predictedForecast;
 
-        ////Constructor (Spawner)
+        //Constructor (Spawner)
 
-        //public Weather()
-        //{
-        //    condition
-        //    temperature
-        //    weatherConditions = new List<string>() { "Sunny, Cloudy, Rainy, Windy" };
-        //    predictedForecast
+        public Weather()
+        {
+            condition
+            temperature
+            weatherConditions = new List<string>() { "Sunny, Cloudy, Rainy, Windy" };
+            predictedForecast
 
 
 
-        }
+    }
 
     //Member Methods
-    
-    
-    
-   
+
+
+
+
 }

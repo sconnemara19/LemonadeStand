@@ -56,14 +56,28 @@ namespace Lemonade_Stand
 
 
         }
-        public static void PurchasingLemons()
+        public static int PurchasingLemons()
         {
             Console.WriteLine("How many lemons would you like to buy?");
+            return int.Parse(Console.ReadLine());
         }
 
-
+        public static int PurchasingSugarCubes()
+        {
+            Console.WriteLine("How many SugarCubes would you like to buy?");
+            return int.Parse(Console.ReadLine());
+        }
         
-
+        public static int PurchashingIceCubes()
+        {
+            Console.WriteLine("How many IceCubes would you like to buy?");
+            return int.Parse(Console.ReadLine());
+        }
+        public static int PurchasingCups()
+        {
+            Console.WriteLine("How many Cups would you like to buy?");
+            return int.Parse(Console.ReadLine());
+        }
 
        
     }

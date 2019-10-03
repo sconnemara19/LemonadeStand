@@ -49,9 +49,10 @@ namespace Lemonade_Stand
 
                     break;
                 case 2:
-                    //Buy Lemons
+                    BuyLemons();
                     
-                    break;
+                    break
+
             }
 
             
@@ -65,14 +66,60 @@ namespace Lemonade_Stand
 
         public void BuyLemons()
         {
-            Userinterface.PurchasingLemons();
-            if( player.wallet )
+            int amount = Userinterface.PurchasingLemons();
+            // check wallet to see if user has enough money to buy this amount of lemons
+            if (player.wallet.moneyInWallet >= priceOfLemons)
             {
-
+                for (int i = 0; i <= amount; i++)
+                {
+                    player.inventory.lemons.Add(new Lemon());
+                }
+                Console.WriteLine("success in buying lemons");
             }
+            else 
+            {
+                Console.WriteLine("You need more money");
+            }
+            
+           
+            
         }
         
 
+        public void BuySugarCubes()
+        {
+            int amount = Userinterface.PurchasingSugarCubes();
 
+            for (int i = 0; i <= amount; i++)
+            {
+                player.inventory.sugarCubes.Add(new SugarCube());
+            }
+
+        }
+
+        public void BuyIceCubes()
+        {
+            int amount = Userinterface.PurchashingIceCubes();
+
+            for (int i = 0; i <= amount; i++)
+            {
+                player.inventory.iceCubes.Add(new IceCube());
+
+            }
+        }
+    
+        public void BuyCups()
+        {
+            int amount = Userinterface.PurchasingCups();
+
+            for (int i = 0; i <= amount; i++)
+            {
+                player.inventory.cups.Add(new Cup());
+            }
+        }    
+    
+    
+    
     }
+
 }
