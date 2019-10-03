@@ -12,9 +12,10 @@ namespace Lemonade_Stand
         //Member Variables (Has A)
 
         Player player = new Player();
-        
+
         List<Day> days;
         int currentDay;
+
 
 
 
@@ -24,8 +25,8 @@ namespace Lemonade_Stand
 
         public Game()
         {
-             
-            
+
+
 
         }
 
@@ -37,24 +38,49 @@ namespace Lemonade_Stand
         {
             Userinterface.DisplayRules();
             player.EnterName();
-            Store store = new Store(player);
-            store.Menu();
-            
-       
+            GameMenu();
+
+
+
 
         }
 
-        
-       
-    
-    
-    
-    
-    
+
+        public void GameMenu()
+        {
+            Userinterface.DisplayGameMenu();
+            int menu = Userinterface.DisplayInput();
+            switch (menu)
+            {
+                case 1:
+                    Store store = new Store(player);
+                    store.Menu();
+
+                    break;
+                case 2:
+                    player.receipe.SetRecipe();
+
+                    break;
+                case 3:
+                    Weather weather = new Weather();
+                    weather.ChoosingWeather();
+
+                    break;
+
+                case 4:
+
+                    break;
+            }
+
+
+
+
+
+        }
+
+
+
+
+
     }
-
-
-
-
-
 }

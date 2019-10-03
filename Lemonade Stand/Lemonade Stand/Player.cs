@@ -12,8 +12,8 @@ namespace Lemonade_Stand
         public string name;
         public Inventory inventory = new Inventory();
         public Wallet wallet = new Wallet();
-      
-        public Receipe receipe;
+
+        public Receipe receipe = new Receipe();
         public Pitcher pitcher;
         public double buisnessProfits;
 

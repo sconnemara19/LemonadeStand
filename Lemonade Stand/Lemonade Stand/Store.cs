@@ -40,41 +40,48 @@ namespace Lemonade_Stand
 
         public void Menu()
         {
-            Userinterface.DisplayStoreMenu();
-            int choice = Userinterface.GetIntegerInput();
-            switch (choice)
+            bool storeActive = true;
+            while (storeActive)
             {
-                case 1:
-                    Userinterface.DisplayInventory(player.inventory);
+                Userinterface.DisplayStoreMenu();
+                int choice = Userinterface.GetIntegerInput();
+                switch (choice)
+                {
+                    case 1:
+                        Userinterface.DisplayInventory(player.inventory);
 
-                    break;
-                case 2:
-                    BuyLemons();
+                        break;
+                    case 2:
+                        BuyLemons();
 
-                    break;
-                case 3:
-                    BuySugarCubes();
+                        break;
+                    case 3:
+                        BuySugarCubes();
 
-                    break;
+                        break;
 
-                case 4:
+                    case 4:
 
-                    BuyIceCubes();
+                        BuyIceCubes();
 
-                    break;
+                        break;
 
-                case 5:
-                    BuyCups();
+                    case 5:
+                        BuyCups();
 
-                    break;
+                        break;
 
-                case 6:
-
-                    break;
-                default:
-                    Menu();
-                    break;
+                    case 6:
+                        storeActive = false;
+                        break;
+                    default:
+                        Menu();
+                        break;
+                }
             }
+ 
+
+           
 
             
         

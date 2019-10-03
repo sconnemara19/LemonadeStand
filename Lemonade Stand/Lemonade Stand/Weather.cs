@@ -9,29 +9,38 @@ namespace Lemonade_Stand
     class Weather
     {
 
-       //// Member Variables
 
-       // string condition;
-       // public int temperature;
-       // private List<string> weatherConditions;
-       // public string predictedForecast;
+        // Member Variables
 
-       // //Constructor (Spawner)
+        string condition;
+        public int temperature;
+        private List<string> weatherConditions;
+        public string predictedForecast;
+        Random rand = new Random();
+        //Constructor (Spawner)
 
-       // public Weather()
-       // {
-       //     condition
-       //     temperature
-       //     weatherConditions = new List<string>() { "Sunny, Cloudy, Rainy, Windy" };
-       //     predictedForecast
+        public Weather()
+        {
 
+            temperature = 0;
+            weatherConditions = new List<string>() { "Sunny, Cloudy, Rainy, Windy" };
+            predictedForecast = null;
+         }
+
+        public void ChoosingWeather()
+        {
+            int index = rand.Next(3);
+            Console.WriteLine(weatherConditions[index]);
+
+        }
 
 
     }
-
-    //Member Methods
-
-
-
-
 }
+
+    
+
+
+
+
+    

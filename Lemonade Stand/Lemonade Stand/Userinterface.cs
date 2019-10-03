@@ -94,7 +94,10 @@ namespace Lemonade_Stand
 
         }
 
-
+        public static void DisplayGameMenu()
+        {
+            Console.WriteLine("Welcome To The Game Menu\n1)Vist the store\n2)Make a receipe\n3)Check the forcast\n4)Start selling");
+        }
 
 
 

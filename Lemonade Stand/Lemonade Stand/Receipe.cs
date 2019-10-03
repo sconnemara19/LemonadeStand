@@ -14,7 +14,8 @@ namespace Lemonade_Stand
         public int amountOfIceCubes;
         public double pricePerCup;
 
-
+        Inventory inventory;
+        
         //Constructor(Spawner)
 
         public Receipe()
@@ -23,13 +24,6 @@ namespace Lemonade_Stand
             amountOfSugar = 0;
             amountOfIceCubes = 0;
             pricePerCup = 0;
-        
-        
-        
-        
-        
-        
-        
         }
 
 
@@ -37,33 +31,33 @@ namespace Lemonade_Stand
 
         //Member Methods (Can Do)
 
-        public void MakingLemonade()
+        public void SetRecipe()
         {
-            
-            LemonsIntoLemonade();
-            AddingSugar();
-            SelectIce();
-            PricePerCup();
+
+            SetLemonsOnRecipe();
+            SetLemonsOnRecipe();
+            SetIceOnRecipe();
+            SetPricePerCupOnRecipe();
         }        
      
-         private void LemonsIntoLemonade()
+         private void SetLemonsOnRecipe()
         {
-            Console.WriteLine("Please enter how many Lemons you would like to add");
+            Console.WriteLine("Please enter how many Lemons you would like to use per pitcher?");
             amountOfLemons = Int32.Parse (Console.ReadLine());
             
         }
 
-        private void AddingSugar()
+        private void SetSugarOnRecipe()
         {
-            Console.WriteLine("Please enter how many cups of Sugar you would like to add");
+            Console.WriteLine("Please enter how many cups of Sugar you would like to use per pitcher?");
             amountOfSugar = Int32.Parse(Console.ReadLine());
             
         }
         
 
-        private void SelectIce()
+        private void SetIceOnRecipe()
         {
-            Console.WriteLine("Please enter the amount of Ice Cubes you would like to add");
+            Console.WriteLine("Please enter the amount of Ice Cubes you would like to use per pitcher?");
              amountOfIceCubes = Int32.Parse(Console.ReadLine());
             
 
@@ -71,7 +65,7 @@ namespace Lemonade_Stand
         }
 
 
-        private void PricePerCup()
+        private void SetPricePerCupOnRecipe()
         {
             Console.WriteLine(" How many cups would you like to charge per cup?");
             pricePerCup =double.Parse(Console.ReadLine());
