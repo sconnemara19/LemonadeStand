@@ -39,6 +39,9 @@ namespace Lemonade_Stand
             player.EnterName();
             Store store = new Store(player);
             store.Menu();
+            
+       
+
         }
 
         

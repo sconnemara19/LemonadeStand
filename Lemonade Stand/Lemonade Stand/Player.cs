@@ -10,13 +10,14 @@ namespace Lemonade_Stand
     {
         //Member Variables (Has A)
         public string name;
-        public Inventory inventory;
-        public Wallet wallet;
+        public Inventory inventory = new Inventory();
+        public Wallet wallet = new Wallet();
+      
         public Receipe receipe;
         public Pitcher pitcher;
         public double buisnessProfits;
 
-
+        
 
 
 

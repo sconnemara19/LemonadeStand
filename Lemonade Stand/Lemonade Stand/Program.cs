@@ -14,7 +14,7 @@ namespace Lemonade_Stand
             game.RunGame();
 
 
-
+            Console.ReadLine();
 
 
 

@@ -12,7 +12,7 @@ namespace Lemonade_Stand
         //Constructor
         static Userinterface()
         {
-
+            
         }
 
 
@@ -30,7 +30,7 @@ namespace Lemonade_Stand
 
         public static void DisplayStoreMenu()
         {
-            Console.WriteLine("Welcome to the store!\n1)View Inventory\n2)Buy Lemons .50cents/per Lemon\n3)Buy Sugar Cubes $1.50\n4)Buy IceCubes/\n5)Buy Cups");
+            Console.WriteLine("Welcome to the store!\n1)View Inventory\n2)Buy Lemons .50cents/per Lemon\n3)Buy Sugar Cubes $1.50\n4)Buy IceCubes/\n5)Buy Cups .75cents\n6)Return to store");
         }
         public static int GetIntegerInput()
         {
@@ -53,8 +53,8 @@ namespace Lemonade_Stand
             Console.WriteLine("Inventory\nSugarCubes: " + inventory.sugarCubes.Count);
             Console.WriteLine("Inventory\nIceCubes: " + inventory.iceCubes.Count);
             Console.WriteLine("Inventory\nCups:" + inventory.cups.Count);
-
-
+            
+            
         }
         public static int PurchasingLemons()
         {
@@ -78,7 +78,26 @@ namespace Lemonade_Stand
             Console.WriteLine("How many Cups would you like to buy?");
             return int.Parse(Console.ReadLine());
         }
+        public static int DisplayInput()
+        {
+            try
+            {
+                int menu  = Int32.Parse(Console.ReadLine());
+                return menu;
 
-       
+            }
+            catch
+            {
+                Console.WriteLine("Invaild entry, please try again");
+                return GetIntegerInput();
+            }
+
+        }
+
+
+
+
+
+
     }
 }

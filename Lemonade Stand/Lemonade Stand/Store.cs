@@ -50,9 +50,30 @@ namespace Lemonade_Stand
                     break;
                 case 2:
                     BuyLemons();
-                    
-                    break
 
+                    break;
+                case 3:
+                    BuySugarCubes();
+
+                    break;
+
+                case 4:
+
+                    BuyIceCubes();
+
+                    break;
+
+                case 5:
+                    BuyCups();
+
+                    break;
+
+                case 6:
+
+                    break;
+                default:
+                    Menu();
+                    break;
             }
 
             
@@ -70,11 +91,9 @@ namespace Lemonade_Stand
             // check wallet to see if user has enough money to buy this amount of lemons
             if (player.wallet.moneyInWallet >= priceOfLemons)
             {
-                for (int i = 0; i <= amount; i++)
-                {
-                    player.inventory.lemons.Add(new Lemon());
-                }
+                
                 Console.WriteLine("success in buying lemons");
+                
             }
             else 
             {
@@ -82,7 +101,16 @@ namespace Lemonade_Stand
             }
             
            
-            
+
+            for (int i = 0; i <= amount; i++)
+            {
+                player.inventory.lemons.Add(new Lemon());
+            }
+
+            player.wallet.moneyInWallet -= amount;
+
+            Menu();
+                
         }
         
 
@@ -90,10 +118,27 @@ namespace Lemonade_Stand
         {
             int amount = Userinterface.PurchasingSugarCubes();
 
+            if (player.wallet.moneyInWallet >= priceOfSugarCubes)
+            {
+
+                Console.WriteLine("success in buying SugarCubes");
+
+            }
+            else
+            {
+                Console.WriteLine("You need more money");
+            }
+
+
+
             for (int i = 0; i <= amount; i++)
             {
                 player.inventory.sugarCubes.Add(new SugarCube());
             }
+
+            player.wallet.moneyInWallet -= amount;
+
+            Menu();
 
         }
 
@@ -101,21 +146,52 @@ namespace Lemonade_Stand
         {
             int amount = Userinterface.PurchashingIceCubes();
 
+            if (player.wallet.moneyInWallet >= priceOfIceCubes)
+            {
+
+                Console.WriteLine("success in buying IceCubes");
+
+            }
+            else
+            {
+                Console.WriteLine("You need more money");
+            }
+
+
+
+
             for (int i = 0; i <= amount; i++)
             {
                 player.inventory.iceCubes.Add(new IceCube());
 
             }
+            player.wallet.moneyInWallet -= amount;
+            Menu();
         }
     
         public void BuyCups()
         {
             int amount = Userinterface.PurchasingCups();
 
+            if (player.wallet.moneyInWallet >= priceOfCups)
+            {
+
+                Console.WriteLine("success in buying SugarCubes");
+
+            }
+            else
+            {
+                Console.WriteLine("You need more money");
+            }
+
+
+
             for (int i = 0; i <= amount; i++)
             {
                 player.inventory.cups.Add(new Cup());
             }
+            player.wallet.moneyInWallet -= amount;
+            Menu();
         }    
     
     
