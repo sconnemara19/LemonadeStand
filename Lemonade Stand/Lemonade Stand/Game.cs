@@ -57,13 +57,15 @@ namespace Lemonade_Stand
                     store.Menu();
 
                     break;
-                case 2:
-                    player.receipe.SetRecipe();
-
-                    break;
                 case 3:
                     Weather weather = new Weather();
                     weather.ChoosingWeather();
+                    weather.ChoosingTemperature();
+
+                    break;
+                case 2:
+                    player.receipe.SetRecipe();
+                    
 
                     break;
 

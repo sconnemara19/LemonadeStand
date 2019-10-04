@@ -12,7 +12,7 @@ namespace Lemonade_Stand
 
         public Weather weather;
         public List<Customer> customer;
-
+        public List 
     
     //Constructor(Spawner)
     

@@ -17,23 +17,39 @@ namespace Lemonade_Stand
         private List<string> weatherConditions;
         public string predictedForecast;
         Random rand = new Random();
+        Random rng = new Random();
         //Constructor (Spawner)
 
         public Weather()
         {
 
-            temperature = 0;
-            weatherConditions = new List<string>() { "Sunny, Cloudy, Rainy, Windy" };
+            
+            weatherConditions = new List<string>() { "Sunny", "Cloudy", "Rainy", "Windy" };
             predictedForecast = null;
          }
 
         public void ChoosingWeather()
         {
-            int index = rand.Next(3);
-            Console.WriteLine(weatherConditions[index]);
+            int index = rand.Next(weatherConditions.Count);
+            condition = weatherConditions[index];
+            Userinterface.DisplayRandomConditions(condition);
+
 
         }
+        public void ChoosingTemperature()
+        {
 
+            int result = rng.Next(50,100);
+            temperature = result;
+            Userinterface.DisplayRandomTemperature(temperature);
+            
+            
+        }
+
+        public void PredictedWeather()
+        {
+
+        }
 
     }
 }

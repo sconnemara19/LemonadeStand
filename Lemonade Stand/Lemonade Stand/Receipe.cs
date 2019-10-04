@@ -15,6 +15,7 @@ namespace Lemonade_Stand
         public double pricePerCup;
 
         Inventory inventory;
+        Pitcher pitcher;
         
         //Constructor(Spawner)
 
@@ -35,9 +36,10 @@ namespace Lemonade_Stand
         {
 
             SetLemonsOnRecipe();
-            SetLemonsOnRecipe();
+            SetSugarCubesOnRecipe();
             SetIceOnRecipe();
             SetPricePerCupOnRecipe();
+            
         }        
      
          private void SetLemonsOnRecipe()
@@ -47,7 +49,7 @@ namespace Lemonade_Stand
             
         }
 
-        private void SetSugarOnRecipe()
+        private void SetSugarCubesOnRecipe()
         {
             Console.WriteLine("Please enter how many cups of Sugar you would like to use per pitcher?");
             amountOfSugar = Int32.Parse(Console.ReadLine());
@@ -70,8 +72,8 @@ namespace Lemonade_Stand
             Console.WriteLine(" How many cups would you like to charge per cup?");
             pricePerCup =double.Parse(Console.ReadLine());
         
-        }   
-    
+        }
+        
             
     
     }

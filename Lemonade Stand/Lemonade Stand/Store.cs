@@ -16,6 +16,7 @@ namespace Lemonade_Stand
         double priceOfIceCubes;
         double priceOfCups;
         
+            // pass player into store
       
        
         
@@ -26,12 +27,11 @@ namespace Lemonade_Stand
         public Store(Player playerPassingIn)
         {
 
-            // pass player into store
             player = playerPassingIn;
 
-            priceOfLemons = .50;
-            priceOfSugarCubes = 1.50;
-            priceOfIceCubes = 1.00;
+            priceOfLemons = .10;
+            priceOfSugarCubes = .50;
+            priceOfIceCubes = .25;
             priceOfCups = .75;
 
         

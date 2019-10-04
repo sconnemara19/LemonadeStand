@@ -30,7 +30,7 @@ namespace Lemonade_Stand
 
         public static void DisplayStoreMenu()
         {
-            Console.WriteLine("Welcome to the store!\n1)View Inventory\n2)Buy Lemons .50cents/per Lemon\n3)Buy Sugar Cubes $1.50\n4)Buy IceCubes/\n5)Buy Cups .75cents\n6)Return to store");
+            Console.WriteLine("Welcome to the store!\n1)View Inventory\n2)Buy Lemons .10cents/per Lemon\n3)Buy Sugar Cubes .50\n4)Buy IceCubes/.25\n5)Buy Cups .75cents\n6)Return to store");
         }
         public static int GetIntegerInput()
         {
@@ -99,8 +99,19 @@ namespace Lemonade_Stand
             Console.WriteLine("Welcome To The Game Menu\n1)Vist the store\n2)Make a receipe\n3)Check the forcast\n4)Start selling");
         }
 
+        public static void DisplayRandomConditions(string weatherCondition)
+        {
+            Console.WriteLine($"Today's condition is {weatherCondition}");
+        }
+      
 
-
-
+        public static void DisplayRandomTemperature(int result)
+        {
+            Console.WriteLine($"Today's temperature is {result}");
+        }
+        public static void GoToPitcher()
+        {
+            Console.WriteLine("Would you like to make a pitcher now?");
+        }
     }
 }
