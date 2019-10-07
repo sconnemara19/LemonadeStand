@@ -109,9 +109,6 @@ namespace Lemonade_Stand
         {
             Console.WriteLine($"Today's temperature is {result}");
         }
-        public static void GoToPitcher()
-        {
-            Console.WriteLine("Would you like to make a pitcher now?");
-        }
+        
     }
 }

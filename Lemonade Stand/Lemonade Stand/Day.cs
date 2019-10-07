@@ -12,15 +12,40 @@ namespace Lemonade_Stand
 
         public Weather weather;
         public List<Customer> customer;
-        public List 
-    
-    //Constructor(Spawner)
-    
-    
-    
-    
-    //Memeber Methods(Can Do)
-    
-    
+
+        //Constructor(Spawner)
+
+        public Day()
+        {
+            weather = new Weather();
+            customer = new List<Customer>();
+        }
+        //create customers
+        //sell lemonade
+        //going to store
+        //
+
+        //Memeber Methods(Can Do)
+
+        public void CreatingCustomer()
+        {
+            for(int i = 0; i < 7; i++)
+            {
+                Customer customer = new Customer();
+                if (weather.temperature <= 60)
+                {
+                    
+                }
+
+            }
+            
+
+        }
+
+
+        public void SellingLemonade()
+        {
+            
+        }
     }
 }

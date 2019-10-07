@@ -25,8 +25,8 @@ namespace Lemonade_Stand
 
         public Game()
         {
-
-
+            days = new List<Day>();
+            
 
         }
 
@@ -58,10 +58,7 @@ namespace Lemonade_Stand
 
                     break;
                 case 3:
-                    Weather weather = new Weather();
-                    weather.ChoosingWeather();
-                    weather.ChoosingTemperature();
-
+                    DisplayWeather();
                     break;
                 case 2:
                     player.receipe.SetRecipe();
@@ -80,8 +77,23 @@ namespace Lemonade_Stand
 
         }
 
+        public void DisplayWeather()
+        {
+            for (int i = 0; i < days.Count; i++)
+            {
+                Console.WriteLine(days[i].weather.temperature);
+                Console.WriteLine(days[i].weather.predictedForecast);
+            }
+        }
 
-
+        public void CreateDays()
+        {
+            for(int i = 0; i < 7; i++)
+            {
+                Day day = new Day();
+                days.Add(day);
+            }
+        }
 
 
     }

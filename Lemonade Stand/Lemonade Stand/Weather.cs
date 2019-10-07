@@ -26,6 +26,8 @@ namespace Lemonade_Stand
             
             weatherConditions = new List<string>() { "Sunny", "Cloudy", "Rainy", "Windy" };
             predictedForecast = null;
+            ChoosingWeather();
+            ChoosingTemperature();
          }
 
         public void ChoosingWeather()
